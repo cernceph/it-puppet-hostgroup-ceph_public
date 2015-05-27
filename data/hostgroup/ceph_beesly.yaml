@@ -1,0 +1,36 @@
+---
+tuned_profile: enterprise-storage
+
+lemon_30504:
+    params:
+        Correlation: "5130:1 != 0 || 12025:1 != 0 || 10531:2 != 0 || 10532:2 != 0 || 10533:2 != 0 || 13049:2 != 0"
+
+osrepos_sync_exclude_packages:
+  - ceph*
+  - libceph*
+  - librados*
+  - librbd*
+  - kernel*
+  - python-ceph*
+  - leveldb*
+
+ceph_release: firefly
+
+ceph_fsid: b4f463a0-c671-43a8-bd36-e40ab8d233d2
+
+puppet_agent_separate_logfile: true
+iptables_separate_logfile: true
+
+pluginsync_filter_enable: True
+pluginsync_filter:
+  - ceph
+  - inifile
+  - sysctl
+
+# route NOCONTACT tickets to the operators, as we have a procedure for this
+lemon_nc:
+  fe_name: "CC Operators"
+  troubleshooting: https://cern.service-now.com/service-portal/article.do?n=KB0002277
+
+ceph::conf::ioprio_class: "idle"
+ceph::conf::ioprio_priority: 0

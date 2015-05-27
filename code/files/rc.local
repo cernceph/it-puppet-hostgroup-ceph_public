@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+# http://techaticpsr.blogspot.ch/2012/04/its-official-we-have-no-love-for.html
+echo never> /sys/kernel/mm/redhat_transparent_hugepage/enabled
+
+touch /var/lock/subsys/local

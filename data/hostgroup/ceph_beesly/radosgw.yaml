@@ -1,0 +1,8 @@
+---
+cernfw_landbset: it_cc_ceph_s3
+
+ceph::conf::rgw_frontends: "civetweb port=8080"
+haproxy_stats_password: "asdfasdf"
+
+syslog_itmon_whitelist:
+ - haproxy

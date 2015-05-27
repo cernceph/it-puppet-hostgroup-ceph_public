@@ -1,0 +1,66 @@
+---
+tuned_profile: ceph-osd
+
+lemon::las::is_essential: true
+
+S2600JF_journals:
+  sde: sda
+  sdf: sda
+  sdg: sda
+  sdh: sda
+  sdi: sda
+  sdj: sdb
+  sdk: sdb
+  sdl: sdb
+  sdm: sdb
+  sdn: sdb
+  sdo: sdc
+  sdp: sdc
+  sdq: sdc
+  sdr: sdc
+  sds: sdc
+  sdt: sdd
+  sdu: sdd
+  sdv: sdd
+  sdw: sdd
+  sdx: sdd
+
+X9SCL/X9SCM_journals:
+  sda: ""
+  sdb: ""
+  sdc: ""
+  sdd: ""
+  sde: ""
+  sdf: ""
+  sdg: ""
+  sdh: ""
+  sdi: ""
+  sdj: ""
+  sdk: ""
+  sdl: ""
+  sdm: ""
+  sdn: ""
+  sdo: ""
+  sdp: ""
+
+S2L_journals:
+  sdg: sdc
+  sdh: sdc
+  sdi: sdc
+  sdj: sdc
+  sdk: sdc
+  sdl: sdd
+  sdm: sdd
+  sdn: sdd
+  sdo: sdd
+  sdp: sdd
+  sdq: sde
+  sdr: sde
+  sds: sde
+  sdt: sde
+  sdu: sde
+  sdv: sdf
+  sdw: sdf
+  sdx: sdf
+  sdy: sdf
+  sdz: sdf
